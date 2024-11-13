@@ -1,0 +1,99 @@
+﻿/* インポート */
+@import url(sanitize.css);
+
+/* ------------- ヘッダー ------------- */
+
+header{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    border: solid black;
+}
+
+header ul{
+    width: 30%;
+    height: 94px;
+    margin:0 0 0 auto;
+    display: flex;
+    flex-direction:row-reverse;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+}
+
+header ul li{
+    margin:auto;
+    list-style:none;
+}
+
+header a img{
+    width:276px;
+    height: 95.2px;
+    border: solid black;
+}
+
+/*ハイパーリンク*/
+a{
+    color:white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: aquamarine;
+}
+
+/* ------------- コンテンツ ------------- */
+
+h1{
+    font-size: 3.5em;
+}
+
+.main{
+    text-align: center;
+}
+
+input[type="text"] {
+    border: none;
+    border-bottom: 2px solid #7a7a7a;
+    padding: 5px;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+textarea {
+    border: solid black;
+    font-size: 16px;
+    padding: 5px;
+    height:6em;
+    width: 50%;
+}
+
+.req {
+    color: red;
+}
+
+/* ------------- フッター ------------- */
+
+footer{
+    width: 100%;
+    height: 180px;
+    background-color: rgb(16, 16, 16);
+    display: flex;
+    align-items: center;
+}
+
+footer ul{
+    margin-right: 60px;
+}
+
+footer li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    list-style:none;
+    color: azure;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* ------------------------------------ */

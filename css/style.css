@@ -1,0 +1,285 @@
+﻿@import url(sanitize.css);
+
+header{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+header ul{
+    width: 350px;
+    height: 94px;
+    margin:0 0 0 auto;
+    display: flex;
+    flex-direction:row-reverse;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+}
+
+header ul li{
+    margin:auto;
+    list-style:none;
+}
+
+header img{
+    max-width:300px;
+    max-height: 100px;
+    border: solid black;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: aquamarine;
+}
+
+h1{
+    width: 100%;
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.main a{
+    color: rgb(26, 37, 255);
+}
+
+.main h1{
+    color: black;
+}
+
+.main h1:hover{
+    color: rgb(20, 225, 156);
+}
+
+h2{
+    width: 100%;
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.slide{
+    width: 100%;
+    height: 670px;
+    background-color: black;
+}
+
+#grandparent {
+    background-color: black;
+    width:85%;
+    height:38em;
+    margin:0 auto;
+    overflow:hidden;
+}
+
+#parent {
+    width:1000%;
+    height:100%;
+    background-color: black;
+    display:flex;
+}
+
+#parent img {
+    width:50%;
+    margin:0.2%;
+}
+
+#buttons {
+    display:flex;
+    justify-content:space-around;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-top: 20px;
+}
+
+#buttons button {
+    width:30%;
+    padding:0.4em;
+    font-size:1em;
+    margin:1em;
+}
+
+.susumu {
+
+    animation:susumu 0.7s;
+    }
+    
+    @keyframes susumu {
+    
+    to {
+    
+    transform:translate(-10%);
+    }
+    
+    }
+    
+    .modoru {
+    
+    animation:modoru 0.7s;
+    }
+    
+    @keyframes modoru {
+    
+    from {
+    
+    transform:translate(-10%);
+    }
+}
+
+.profile{
+    background-color: #dcdcdc;
+}
+
+.profile h1{
+    padding-top: 30px;
+}
+
+.contents{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    justify-content: space-around;
+}
+
+.contents img{
+    max-width: 250px;
+    max-height: 350px;
+    padding-bottom: 50px;
+}
+
+.profile .text{
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+    padding-bottom: 50px;
+}
+
+p{
+    background-color: #dcdcdc;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    margin: 0;
+    text-align:right;
+    color: blue;
+}
+
+.game h2{
+    margin-bottom: 15px;
+}
+
+.game p{
+    background-color: white;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    margin: 0;
+    text-align:right;
+    color: blue;
+}
+
+.column{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.ele{
+    font-size: 0.7em;
+}
+
+.ele img{
+    width: 500px;
+    height: 300px;
+    max-width: 500px;
+    max-height: 300px;
+    border-radius: 25px;
+    overflow:hidden;
+}
+
+footer{
+    width: 100%;
+    height: 180px;
+    background-color: rgb(16, 16, 16);
+    display: flex;
+    align-items: center;
+}
+
+footer ul{
+    margin-right: 60px;
+}
+
+footer li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    list-style:none;
+    color: azure;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+@media (max-width:1215px){
+    .slide{
+        display: none;
+    }
+
+}
+
+@media (max-width:1000px){
+    .column{
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .ele{
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    .profile{
+        margin: 0 auto;
+    }
+
+    .contents{
+        text-align: center;
+        display: block;
+        font-size: 0.8em;
+    }
+
+    .text{
+        margin: 0 auto;
+        width: 380px;
+    }
+}
+
+@media (max-width:600px){
+    header ul{
+        display: none;
+    }
+
+}
+
+@media (max-width:400px){
+    h1{
+        padding-left: 10px;
+    }
+
+    .game img{
+        width: 350px;
+        height: 200px;
+    }
+
+    .contents img{
+        max-width: 200px;
+        max-height: 300px;
+        padding-bottom: 35px;
+    }
+}

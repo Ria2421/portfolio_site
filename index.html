@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>NAKAMOTO_GAMES</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <!-- ヘッダー -->
+    <header>
+        <img src="img/others/pageLogo.png" alt="ロゴ" />
+
+        <ul class="menu1">
+            <li><a href="contact.html">CONTACT</a></li>
+            <li> <a href="profile.html">PROFILE</a></li>
+            <li> <a href="game.html"> GAME </a> </li>
+        </ul>
+
+    </header>
+
+    <!-- メイン -->
+    <div class="main">
+
+        <!-- 画像スライド領域 -->
+        <div class="slide">
+            
+            <!-- １番外の可視領域 -->
+            <div id = "grandparent">
+
+                <!-- 要素を並べる領域 -->
+                <div id="parent">
+                    <img src="img/grap/Grap000.png" alt="grapタイトル" />
+                    <img src="img/grap/Grap002.png" alt="grapタイトル" />
+                    <img src="img/beatShooter/BeatShooter000.png" alt="BeatShooterタイトル" />
+                    <img src="img/beatShooter/BeatShooter002.png" alt="BeatShooterタイトル" />
+                    <img src="img/makeMyFace/MakemyFace000.png" alt="makeMyFaceタイトル" />
+                    <img src="img/makeMyFace/MakemyFace005.png" alt="makeMyFaceタイトル" />
+                    <img src="img/thursdayThe12th/ThursdayThe12th000.png" alt="12日の木曜日タイトル" />
+                    <img src="img/thursdayThe12th/ThursdayThe12th001.png" alt="12日の木曜日タイトル" />
+                    <img src="img/chillGardian/ChillGardian000.png" alt="ChillGardianタイトル" />
+                    <img src="img/chillGardian/ChillGardian001.png" alt="ChillGardianタイトル" />
+                </div>
+
+            </div>
+            
+            <!-- ボタン -->
+            <div id = "buttons">
+                <button onclick = "modoru()"> ◀︎ </button>
+                <button onclick = "susumu()"> ▶︎ </button>
+            </div>
+          
+          <!-- JavaScript -->
+          <script>
+            // 親要素を取得
+            const parent = document.getElementById("parent");
+
+            // 進むボタンを押した時の関数
+            function susumu() {
+                // アニメーション
+                parent.classList.add("susumu");
+
+                // アニメーション完了時のイベントリスナ
+                parent.addEventListener("animationend",susunda,{once:true});
+            }
+
+            // 進むアニメーション完了時の関数
+            function susunda() {
+                // 要素の順番を入れ替え
+                parent.appendChild(parent.children[0]);
+
+                // アニメーションのCSSを削除 
+                parent.classList.remove("susumu");
+            }
+
+            // 戻るボタンを押したときの関数
+            function modoru() {
+                // アニメーション
+                parent.classList.add("modoru");
+
+                // 要素の順番を入れ替え
+                parent.insertBefore(parent.children[parent.children.length-1],parent.children[0]);
+
+                // アニメーション完了時のイベントリスナ
+                parent.addEventListener("animationend",modotta,{once:true});
+            }
+
+
+            // 戻るアニメーション完了時の関数
+            function modotta() {
+                //アニメーションのCSSを削除
+                parent.classList.remove("modoru");
+            }
+          </script>
+
+        </div>
+
+        <!-- ゲーム一覧 -->
+        <div class="game">
+            <a href="game.html"><h1> ▶GAME </h1></a>
+            <h2> ゲーム一覧 </h2>
+
+            <!-- 1列目 -->
+            <div class="column">
+                <div class="ele">
+                    <img src="img/grap/Grap000.png" alt="grapタイトル" /><br>
+                    <br>
+                    タイトル:grap!<br>
+                    ジャンル:2Dフックアクション
+                </div>
+                <div class="ele">
+                    <img src="img/beatShooter/BeatShooter000.png" alt="BeatShooterタイトル" /><br>
+                    <br>
+                    タイトル:BeatShooter<br>
+                    ジャンル:横スク2DSTG
+                </div>
+            </div>
+
+            <!-- 2列目 -->
+            <div class="column">
+                <div class="ele">
+                    <img src="img/makeMyFace/MakemyFace000.png" alt="makeMyFaceタイトル" /><br>
+                    <br>
+                    タイトル:MakemyFace!<br>
+                    ジャンル:ワンボタンミニゲーム
+                </div>
+                <div class="ele">
+                    <img src="img/thursdayThe12th/ThursdayThe12th000.png" alt="12日の木曜日タイトル" /><br>
+                    <br>
+                    タイトル:12日の木曜日<br>
+                    ジャンル:ホラーコメディランゲーム
+                </div>
+            </div>
+
+            <!-- 3列目 -->
+            <div class="column">
+                <div class="ele">
+                    <img src="img/chillGardian/ChillGardian000.png" alt="ChillGardianタイトル" /><br>
+                    <br>
+                    タイトル:ChillGardian<br>
+                    ジャンル:2Dアクション
+                </div>
+            </div>
+
+            <p> <a href="game.html"> ▶もっと見る </a> </p>
+        </div>
+
+        <!-- プロフィール -->
+        <div class="profile">
+            <a href="profile.html"><h1> ▶PROFILE </h1></a>
+
+            <!-- コンテンツ部分 -->
+            <div class="contents">
+
+                <img src="img/others/Face3.png" alt="顔写真" />
+
+                <div class="text">
+                    名前：中本健太<br>
+                    生年月日：2000年4月1日<br>
+                    <br>
+                    経歴<br>
+                    2018.3　北海道札幌工業高等学校  機械科卒<br>
+                    2018.4　(株)マキタ 札幌営業所 入社<br>
+                    2023.3　(株)マキタ 札幌営業所 退社<br>
+                    2023.4　吉田学園情報ビジネス専門学校<br>
+                    　　　　ゲームエンジニア学科 入学
+                </div>
+
+            </div>
+
+        </div>
+        <p> <a href="profile.html"> ▶もっと見る </a> </p>
+
+    </div>
+
+    <!-- フッター -->
+    <footer>
+        <ul class="menu2">
+            <li> <a href="index.html"> TOP </a> </li>
+            <li> <a href="game.html"> GAME </a> </li>
+            <li> <a href="profile.html"> PROFILE </a></li>
+            <li> <a href="contact.html"> CONTACT </a></li>
+        </ul>
+    </footer>
+
+</body>
