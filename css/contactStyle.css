@@ -53,6 +53,10 @@ h1{
     text-align: center;
 }
 
+.content{
+    height: 290px;
+}
+
 input[type="text"] {
     border: none;
     border-bottom: 2px solid #7a7a7a;
@@ -67,10 +71,6 @@ textarea {
     padding: 5px;
     height:6em;
     width: 50%;
-}
-
-.req {
-    color: red;
 }
 
 /* ------------- フッター ------------- */

@@ -59,7 +59,7 @@ h2{
 
 /*自己紹介*/
 .self-introduction{
-    width: 60%;
+    width: 800px;
     height: 320px;
     margin: 0 auto;
     display: flex;
@@ -76,6 +76,7 @@ h2{
 
 .textbox{
     height: 200px;
+    width: 300px;
     background-color: white;
 }
 
@@ -88,7 +89,7 @@ h2{
 
 /*グリッド*/
 .grid{
-    width: 55%;
+    width: 780px;
     margin: 0 auto;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -112,13 +113,12 @@ h2{
 }
 
 .grid_career a{
-    text-decoration: none;
     font-weight: bold;
-    color: rgb(17, 17, 17);
+    color: rgb(0, 0, 0);
 }
 
 .grid_career a:hover{
-    color: rgb(20, 225, 156);
+    color: rgb(77, 49, 255);
 }
 
 /*資格*/

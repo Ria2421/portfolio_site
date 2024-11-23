@@ -1,5 +1,7 @@
-﻿@import url(sanitize.css);
+﻿/* インポート */
+@import url(sanitize.css);
 
+/* ------------- ヘッダー ------------- */
 header{
     display: flex;
     width: 100%;
@@ -8,7 +10,7 @@ header{
 }
 
 header ul{
-    width: 350px;
+    width: 30%;
     height: 94px;
     margin:0 0 0 auto;
     display: flex;
@@ -24,8 +26,8 @@ header ul li{
 }
 
 header img{
-    max-width:300px;
-    max-height: 100px;
+    width:276px;
+    height: 95.2px;
     border: solid black;
 }
 
