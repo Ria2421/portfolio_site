@@ -3,6 +3,9 @@
 
 /* ------------- ヘッダー ------------- */
 header{
+    position: fixed; /* ヘッダーを固定する */
+    top: 0; /* 上部から配置の基準位置を決める */
+    left: 0; /* 左から配置の基準位置を決める */
     display: flex;
     width: 100%;
     height: 100px;
@@ -44,7 +47,14 @@ h1{
     width: 100%;
     margin: 0;
     padding-top: 20px;
-    padding-left: 50px;
+}
+
+/* ------------- メイン ------------- */
+
+body {
+    background-image: url("../img/others/BG.png");
+    font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;
+    display: block;
 }
 
 .main a{
@@ -52,7 +62,9 @@ h1{
 }
 
 .main h1{
+    margin-top: 100px;
     color: black;
+    font-size: 50px;
 }
 
 .main h1:hover{
@@ -66,77 +78,18 @@ h2{
     padding-left: 50px;
 }
 
-.slide{
-    width: 100%;
-    height: 720px;
-    background-color: black;
+.container{
+    margin: 0 auto;
+    max-width: 1240px;
+    background-color: #ffffff81;
 }
 
-#grandparent {
-    background-color: black;
-    width:85%;
-    height:42em;
-    margin:0 auto;
-    overflow:hidden;
-}
-
-#parent {
-    width:1000%;
-    height:100%;
-    background-color: black;
-    display:flex;
-}
-
-#parent img {
-    width:50%;
-    margin:0.2%;
-}
-
-#buttons {
-    display:flex;
-    justify-content:space-around;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin-top: 20px;
-}
-
-#buttons button {
-    width:30%;
-    padding:0.4em;
-    font-size:1em;
-    margin:1em;
-}
-
-.susumu {
-
-    animation:susumu 0.7s;
-    }
-    
-    @keyframes susumu {
-    
-    to {
-    
-    transform:translate(-10%);
-    }
-    
-    }
-    
-    .modoru {
-    
-    animation:modoru 0.7s;
-    }
-    
-    @keyframes modoru {
-    
-    from {
-    
-    transform:translate(-10%);
-    }
-}
+/* ------------- プロフィール ------------- */
 
 .profile{
-    background-color: #dcdcdc;
+    margin-left: -.75rem;
+    margin-right: -.75rem;
+    text-align: center
 }
 
 .profile h1{
@@ -148,24 +101,33 @@ h2{
     margin-left: auto;
     margin-right: auto;
     padding-top: 50px;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .contents img{
-    max-width: 250px;
-    max-height: 350px;
+    max-width: 200px;
+    max-height: 300px;
     padding-bottom: 50px;
 }
 
 .profile .text{
-    display: flex;
+    display: block;
     align-items: center;
-    font-size: 1.4em;
-    padding-bottom: 50px;
+    text-align:left;
+    font-size: 16px;
+    padding-left: 100px;
+    padding-bottom: 20px;
+}
+
+.text ul{
+    padding-left: 0;
+}
+
+.text li{
+    list-style-type: none;
 }
 
 p{
-    background-color: #dcdcdc;
     padding-right: 10px;
     padding-bottom: 5px;
     margin: 0;
@@ -173,12 +135,80 @@ p{
     color: blue;
 }
 
-.game h2{
+/*グリッド*/
+.grid{
+    width: 780px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 320px;
+    text-align:left;
+}
+
+.grid h2{
+    padding-left: 15px;
+}
+
+/*経歴*/
+.grid_career{
+    background-color: #fcb6b64c;
+}
+
+.grid_career a{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.grid_career a:hover{
+    color: rgb(77, 49, 255);
+}
+
+/*趣味*/
+.grid_hobby{
+    background-color: rgba(201, 255, 195, 0.3);
+}
+
+/* ------------- スキル ------------- */
+
+.skill{
+    width: 760px;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 180px;
+}
+
+.card{
+    display: flex;
+}
+
+.card div{
+    padding-left: 10px;
+}
+
+.card img{
+    width: 80px;
+    height: 80px;
+}
+
+/* ------------- ポートフォリオ ------------- */
+
+.portfolio{
+    margin-left: -.75rem;
+    margin-right: -.75rem;
+    text-align: center
+}
+
+.portfolio h2{
     margin-bottom: 15px;
 }
 
-.game p{
-    background-color: white;
+.portfolio p{
     padding-right: 10px;
     padding-bottom: 5px;
     margin: 0;
@@ -188,22 +218,39 @@ p{
 
 .column{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-bottom: 50px;
 }
 
 .ele{
     font-size: 0.7em;
+    margin: 10px;
+    font-weight: bold;
 }
 
 .ele img{
-    width: 500px;
-    height: 300px;
-    max-width: 500px;
-    max-height: 300px;
+    width: 300px;
+    height: 180px;
+    max-width: 300px;
+    max-height: 180px;
     border-radius: 25px;
     overflow:hidden;
 }
+
+/* ------------- コンタクト ------------- */
+
+.contact{
+    text-align: center;
+}
+
+.contact .content{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+/* ------------- フッター ------------- */
 
 footer{
     width: 100%;
@@ -233,7 +280,7 @@ footer li{
 
 }
 
-@media (max-width:1000px){
+@media (max-width:1200px){
     .column{
         width: 100%;
         display: block;
