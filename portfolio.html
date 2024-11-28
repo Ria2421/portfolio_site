@@ -11,16 +11,88 @@
 
     <!-- ヘッダー -->
     <header>
-        <a href="index.html"> <img src="img/others/pageLogo.png" alt="ロゴ" /> </a>
         <ul class="menu1">
-            <li> <a href="portfolio.html"> PORTFOLIO </a> </li>
+            <li> <a href="index.html#profile">PROFILE</a> </li>
+            <li> <a href="index.html#skill">SKILL</a> </li>
+            <li> <a href="index.html#portfolio">PORTFOLIO</a> </li>
+            <li> <a href="index.html#contact">CONTACT</a> </li>
         </ul>
     </header>
 
     <!-- メイン -->
     <div class="main">
-        <h1> PORTFOLIO </h1>
+        <h1 class="title"> PORTFOLIO </h1>
         
+        <!-- カラムR (左:説明 右:画像) -->
+        <div class="columnR"  id="sodaterutti">
+
+            <!-- 説明 -->
+            <div class="textbox">
+                <h3>ソダテルッチ</h3>
+                ジャンル:育成ゲーム<br>
+                制作環境：Unity APIサーバー(Laravel) Docker Azure<br>
+                制作期間：2024.10/01 ~ 10/28<br>
+                モンスターを育成して図鑑コンプリートを目指そう！<br>
+                Laravelを使用し、WebAPIサーバーを構築。API作成時には仕様書や
+                DBのER図の作成から行いました。また、APIのセキュリティ強化の為
+                にトークンを利用した認証機能の追加を行いました。<br>
+                <br>
+                <br>
+            </div>
+        
+            <!-- 動画 -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yevqK1ythWw?si=ZGlsrnxlc2bL3vpn" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        </div>
+
+        <!-- カラムL (左:画像 右:説明) -->
+        <div class="columnL" id="eraserShot">
+    
+             <!-- 動画 -->
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/_A6t6SzbrFg?si=SP0EsrLJeUlTxXaq" title="YouTube video player" 
+             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+             <!-- 説明 -->
+             <div class="textbox">
+                 <h3>EraserShot</h3>
+                 ジャンル:ソーシャルパズルゲーム<br>
+                 制作環境：Unity APIサーバー(Laravel) Docker Azure<br>
+                 制作期間：2024.7/25 ~ 9/3<br>
+                 スワイプ操作のみの簡単操作。消しゴムを弾いてゴールに<br>
+                 入れよう！フォロー・ステージクリエイト機能も実装。<br>
+                 Laravelを使用し、WebAPIサーバーを構築。API作成時には仕様書や
+                 DBのER図の作成から行いました。また、Web管理ツールも同時に作成
+                 することでデータの管理をしやすくしました。<br>
+             </div>
+
+        </div>
+
+        <!-- カラムR (左:説明 右:画像) -->
+        <div class="columnR" id="trashPotion">
+
+            <!-- 説明 -->
+            <div class="textbox">
+                <h3>TrashPotion</h3>
+                ジャンル:パーティーバトル<br>
+                制作環境：Unity Docker AzureVM WebSocketサーバー<br>
+                制作期間：2024.2/5 ~ 3/12<br>
+                作って・投げて・吹っ飛ばせ！ターン制爆発バトル！<br>
+                チームで開発を行い、WebSocketを利用したリアルタイム通信の
+                実装に力を入れました。この際に初めてシーケンス図の作成を
+                行いました。<br>
+                <br>
+            </div>
+    
+            <!-- 動画 -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DBd5AJ63cn8?si=qI-Q2oT86nwEjtSK" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+        </div>
+
         <!-- カラムL (左:画像 右:説明) -->
         <div class="columnL" id="grap">
 
@@ -34,10 +106,10 @@
                         <h3>Grap!</h3>
                         ジャンル:2Dフックアクション<br>
                         制作環境：Unity,AzureFunction,AzureDB MySQL<br>
-                        制作期間：1ヵ月<br>
+                        制作期間：2023.11/28 ~ 12/22<br>
                         <br>
                         フックアクションを活用し、クリアを目指す！<br>
-                        オンラインランキング・ゴースト機能実装。<br>
+                        Azureを利用したオンラインランキング・ゴースト機能実装。<br>
                         最短ゴールでハイスコアを狙おう！！<br>
             </div>
 
@@ -51,7 +123,7 @@
                         <h3>BeatShooter</h3>
                         ジャンル:横スク2DSTG<br>
                         制作環境：C言語 DirectX<br>
-                        制作期間：3ヵ月<br>
+                        制作期間：2023.7/26 ~ 9/27<br>
                         <br>
                         横スクロールシューティングゲーム<br>
                         コンボを繋いでフィーバーモードへ！<br>
@@ -67,6 +139,52 @@
         </div>
 
         <!-- カラムL (左:画像 右:説明) -->
+        <div class="columnL" id="troubleShooter">
+    
+            <!-- 動画 -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6foDMc0BA7c?si=gjaLuhg6aoNux1t-" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+            <!-- 説明 -->
+            <div class="textbox">
+                <h3>TroubleShooter</h3>
+                ジャンル:反射神経競争ゲーム<br>
+                制作環境：Unity<br>
+                制作期間：2024.10/12 ~ 13<br>
+                SapporoGameCamp2024というイベントにて作成。<br>
+                テーマ「凹」 7人チーム<br>
+                自分の出した案が採用されたこともあり、企画・完成時の発表を行いました。
+                開発の際にはゲーム全体を見つつ、インゲームのシステムを担当しました。<br>
+                <br>
+            </div>
+        
+        </div>
+
+        <!-- カラムR (左:説明 右:画像) -->
+        <div class="columnR" id="chaosWars">
+
+            <!-- 説明 -->
+            <div class="textbox">
+                <h3>ChaosWars</h3>
+                ジャンル:ディフェンスゲーム<br>
+                制作環境：Unity<br>
+                制作期間：2024.9/30 [10時間]<br>
+                学内開催のハッカソン (制限時間：10時間) にて作成<br>
+                テーマ「2ボタン」 4人チーム<br>
+                3度目のハッカソン参加作品。<br>
+                迫りくる弾・敵から身を守れ！<br>
+                <br>
+            </div>
+    
+            <!-- 動画 -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QSfRmey4064?si=r-1-fvoL9TCMc2Ec" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+        </div>
+
+        <!-- カラムL (左:画像 右:説明) -->
         <div class="columnL" id="makemyFace">
 
             <!-- 動画 -->
@@ -77,9 +195,9 @@
             <!-- 説明 -->
             <div class="textbox">
                 <h3>MakemyFace!</h3>
-                ジャンル:ワンボタンミニゲーム<br>
+                ジャンル:福笑い<br>
                 制作環境：Unity<br>
-                制作期間：3日間<br>
+                制作期間：2024.1/26 ~ 28<br>
                 <br>
                 Global Game Jam Sapporo 2024 にて制作<br>
                 テーマである「笑わせて！」に沿って制作した福笑いゲーム<br>
@@ -96,10 +214,10 @@
                 <h3>ChillGardian</h3>
                 ジャンル:2Dアクション<br>
                 制作環境：Unity<br>
-                制作期間：10時間<br>
+                制作期間：2023.12/25 [10時間]<br>
                 <br>
                 学内開催のハッカソン (制限時間：10時間) にて作成<br>
-                テーマ「シン・ユキガッセン」テクスチャ使用禁止。<br>
+                テーマ「シン・ユキガッセン」テクスチャ使用禁止。 4人チーム<br>
                 2回目のハッカソン参加作品。<br>
                 雪弾を作成し、怪獣へ放て！<br>
             </div>
@@ -124,129 +242,14 @@
                 <h3>12日の木曜日</h3>
                 ジャンル:ホラーコメディランゲーム<br>
                 制作環境：C言語 DirectX<br>
-                制作期間：10時間<br>
+                制作期間：2023.9/29 [10時間]<br>
                 <br>
                 学内開催のハッカソン (制限時間：10時間) にて作成<br>
-                テーマ「１ボタン×２D×パクれ」<br>
+                テーマ「１ボタン×２D×パクれ」 4人チーム<br>
                 初めてのハッカソン参加作品。<br>
                 恐怖の金曜日に向け、準備を整えよう！<br>
             </div>
 
-        </div>
-
-        <!-- カラムR (左:説明 右:画像) -->
-        <div class="columnR" id="trashPotion">
-
-            <!-- 説明 -->
-            <div class="textbox">
-                <h3>TrashPotion</h3>
-                ジャンル:2Dアクション<br>
-                制作環境：Unity<br>
-                制作期間：10時間<br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-            </div>
-    
-            <!-- 動画 -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/DBd5AJ63cn8?si=qI-Q2oT86nwEjtSK" title="YouTube video player" 
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-        </div>
-        
-        <!-- カラムL (左:画像 右:説明) -->
-        <div class="columnL" id="eraserShot">
-    
-             <!-- 動画 -->
-             <iframe width="560" height="315" src="https://www.youtube.com/embed/_A6t6SzbrFg?si=SP0EsrLJeUlTxXaq" title="YouTube video player" 
-             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-             <!-- 説明 -->
-             <div class="textbox">
-                 <h3>EraserShot</h3>
-                 ジャンル:<br>
-                 制作環境：C言語 DirectX<br>
-                 制作期間：10時間<br>
-                 <br>
-                 <br>
-                 <br>
-                 <br>
-                 <br>
-             </div>
-
-        </div>
-
-         <!-- カラムR (左:説明 右:画像) -->
-        <div class="columnR" id="chaosWars">
-
-            <!-- 説明 -->
-            <div class="textbox">
-                <h3>ChaosWars</h3>
-                ジャンル:2Dアクション<br>
-                制作環境：Unity<br>
-                制作期間：10時間<br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-            </div>
-    
-            <!-- 動画 -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/QSfRmey4064?si=r-1-fvoL9TCMc2Ec" title="YouTube video player" 
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-        </div>
-
-        <!-- カラムL (左:画像 右:説明) -->
-        <div class="columnL" id="troubleShooter">
-    
-            <!-- 動画 -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/6foDMc0BA7c?si=gjaLuhg6aoNux1t-" title="YouTube video player" 
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        
-            <!-- 説明 -->
-            <div class="textbox">
-                <h3>TroubleShooter</h3>
-                ジャンル:<br>
-                制作環境：C言語 DirectX<br>
-                制作期間：10時間<br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-            </div>
-        
-        </div>
-
-        <!-- カラムR (左:説明 右:画像) -->
-        <div class="columnR"  id="sodaterutti">
-
-            <!-- 説明 -->
-            <div class="textbox">
-                <h3>ソダテルッチ</h3>
-                ジャンル:2Dアクション<br>
-                制作環境：Unity<br>
-                制作期間：10時間<br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-            </div>
-        
-            <!-- 動画 -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/yevqK1ythWw?si=ZGlsrnxlc2bL3vpn" title="YouTube video player" 
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        
         </div>
 
     </div>
@@ -254,10 +257,10 @@
     <!-- フッター -->
     <footer>
         <ul class="menu2">
-            <li> <a href="index.html"> TOP </a> </li>
-            <li> <a href="game.html"> GAME </a> </li>
-            <li> <a href="profile.html"> PROFILE </a></li>
-            <li> <a href="contact.html"> CONTACT </a></li>
+            <li> <a href="index.html#profile">PROFILE</a> </li>
+            <li> <a href="index.html#skill">SKILL</a> </li>
+            <li> <a href="index.html#portfolio">PORTFOLIO</a> </li>
+            <li> <a href="index.html#contact">CONTACT</a> </li>
         </ul>
     </footer>
 
