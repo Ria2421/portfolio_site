@@ -104,6 +104,15 @@ a:hover{
     color: blue;
 }
 
+.textbox .storeURL{
+    display: flex;
+    margin-top: 5px;
+}
+
+.textbox .storeURL img{
+    margin-left: 0;
+}
+
 /* ------------- フッター ------------- */
 
 footer{
